@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+# onepageappproto
      ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
     '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
@@ -25,6 +25,15 @@ The Cloud9 IDE team
 
 Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
 To watch some training videos, visit http://www.youtube.com/user/c9ide
-=======
-# onepageappproto
->>>>>>> 06fde22394907d55d3c86c473ba96d75e7aae24f
+
+
+## GitHub
+http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/asteriusj/onepageappproto.git
+git push -u origin master
+
+
