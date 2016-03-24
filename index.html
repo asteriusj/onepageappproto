@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>MySinglePageApp...</title>
+
+
+<script>
+function myFunction( ) {
+	
+	function getQueryParams(qs) {
+	    qs = qs.split('+').join(' ');
+	
+	    var params = {},
+	        tokens,
+	        re = /[?&]?([^=]+)=([^&]*)/g;
+	
+	    while (tokens = re.exec(qs)) {
+	        params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
+	    }
+	
+	    return params;
+	}
+	
+	var query = getQueryParams(document.location.search);
+	var codeVal = query.code;
+	//alert(codeVal);
+	var x=document.getElementById("codeId");
+	//alert(x.innerHTML)
+	var elem = document.getElementById("codeId"); // Get text field
+	//alert(elem.value);
+	elem.value = codeVal;
+	//alert('elem.value: ', elem.value);
+}
+
+</script>
+</head>
+
+<body onload="myFunction()">
+<div id="mainContent">
+
+
+
+<h3>Auth0</h3>
+<a href="https://myapplaud.auth0.com/login?client=swWs7LuGuY3D1S2IIuSrOhe284g4CGvm&callback=https://onepageappproto-asteriusj.c9users.io/index.html">MyOnePageApp Login</a>
+
+<form name="" action="https://myapplaud.auth0.com/oauth/token" method="post">
+	
+	<br/><br/>
+	<label for="client_id">client_id=YOUR_CLIENT_ID</label><br/>
+	<input type="text" name="client_id" value="swWs7LuGuY3D1S2IIuSrOhe284g4CGvm">
+	<br/><br/>
+	<label for="redirect_uri">&redirect_uri=http://YOUR_APP/callback</label><br/>
+	<input type="text" id="redirect_uri" value="https://onepageappproto-asteriusj.c9users.io/index.html">
+	<br/><br/>
+	<label for="client_secret">&client_secret=YOUR_CLIENT_SECRET</label><br/>
+	<input type="text" id="client_secret" value="odRgRozNu75Ty4YXzGsxf4OG4VkcWPZSohY7otDgm0LGag5pfLPwLGL__8lRarAk">
+	<br/><br/>
+	<label for="code">&code=AUTHORIZATION_CODE</label><br/>
+	<input type="text" id="codeId" name="code" placeholder="code goes here">
+	<br/><br/>
+	<label for="grant_type">&grant_type=authorization_code</label><br/>
+	<input type="text" id="grant_type" value="authorization_code">
+	<br/><br/>
+	<input type="submit" value="Post">
+	
+</form>
+
+
+
+
+<h3><a href="angular/">Angular</a></h3>
+<h3><a href="backbone/index.html">Backbone</a></h3>
+<h3><a href="bootstrap/">Bootstrap</a></h3>
+
+</div>
+</body>
+</html>

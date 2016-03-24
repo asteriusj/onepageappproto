@@ -1,0 +1,38 @@
+!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+
+</head>
+
+<body>
+<div id="mainContent">
+
+<h3>Auth0</h3>
+<form name="" action="https://myapplaud.auth0.com/oauth/token" method="post">
+	
+	<br/>
+	<label for="client_id">client_id=YOUR_CLIENT_ID</label><br/>
+	<input type="text" name="client_id" value="TisoMUTDnyiQao6HDXNnmRS03ZAHA9i1">
+	<br/>
+	<label for="redirect_uri">&redirect_uri=http://YOUR_APP/callback</label><br/>
+	<input type="text" name="redirect_uri" value="https://onepageappproto-asteriusj.c9users.io/">
+	<br/>
+	<label for="client_secret">&client_secret=YOUR_CLIENT_SECRET</label><br/>
+	<input type="text" name="client_secret" value="TrTrPjbEk0PiaMpIkYaYJdqJpWIXtSmtADKxmgLSHl6l0I1HtJPE4yZSQWO_vhWx">
+	<br/>
+	<label for="code">&code=AUTHORIZATION_CODE</label><br/>
+	<input type="text" name="code" value="8A7ju1qZo2h45qsm">
+	<br/>
+	<label for="grant_type">&grant_type=authorization_code</label><br/>
+	<input type="text" name="grant_type" value="authorization_code">
+	<br/>
+	<input type="submit" value="Post">
+	
+</form>
+
+</div>
+</body>
+</html>
