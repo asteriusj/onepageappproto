@@ -1,0 +1,387 @@
+{
+  fields: [
+    {
+      name: "salutation",
+      label: "Salutation",
+      caption: "",
+      control: "radio",
+      options: [
+        {
+          label: "Mr.",
+          value: "Mr"
+        },
+        {
+          label: "Mrs.",
+          value: "Mrs"
+        },
+        {
+          label: "Ms.",
+          value: "Ms"
+        },
+        {
+          label: "Dr.",
+          value: "Dr"
+        }
+      ],
+      value: "",
+      placeholder: "",
+      required: false,
+      roleattributes: [
+        {
+          role: "Athletic Director",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Head Coach",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Staff",
+          attribute: "Observe",
+          disabled: true,
+          visible: true
+        },
+        {
+          role: "Parent",
+          attribute: "Observe",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Player",
+          attribute: "N/A",
+          disabled: true,
+          visible: false
+        }
+      ]
+    },
+    {
+      name: "id",
+      label: "Id",
+      control: "uneditable-input",
+      placeholder: "",
+      
+    },
+    {
+      name: "firstName",
+      label: "FirstName",
+      control: "input",
+      type: "text",
+      autocomplete: "off",
+      size: 30,
+      maxlength: 30,
+      placeholder: "",
+      required: true,
+      helpMessage: "",
+      roleattributes: [
+        {
+          role: "Athletic Director",
+          attribute: "Contribute",
+          disabled: false,
+          readonly: false,
+          visible: true
+        },
+        {
+          role: "Head Coach",
+          attribute: "Contribute",
+          disabled: false,
+          readonly: false,
+          visible: true
+        },
+        {
+          role: "Staff",
+          attribute: "Contribute",
+          disabled: false,
+          readonly: false,
+          visible: true
+        },
+        {
+          role: "Parent",
+          attribute: "Contribute",
+          disabled: false,
+          readonly: false,
+          visible: true
+        },
+        {
+          role: "Player",
+          attribute: "Observe",
+          disabled: true,
+          readonly: true,
+          visible: true
+        }
+      ]
+    },
+    {
+      name: "lastName",
+      label: "LastName",
+      control: "input",
+      type: "text",
+      placeholder: "",
+      required: true,
+      roleattributes: [
+        {
+          role: "Athletic Director",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Head Coach",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Staff",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Parent",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Player",
+          attribute: "Observe",
+          disabled: true,
+          readonly: true,
+          visible: true
+        }
+      ]
+    },
+    {
+      name: "informalName",
+      label: "InformalName",
+      control: "input",
+      type: "text",
+      placeholder: "",
+      required: true,
+      roleattributes: [
+        {
+          role: "Athletic Director",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Head Coach",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Staff",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Parent",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        },
+        {
+          role: "Player",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        }
+      ]
+    },
+    {
+      control: "spacer"
+    },
+    {
+      name: "address.address1",
+      label: "Address1",
+      control: "input",
+      placeholder: "",
+      
+    },
+    {
+      name: "address.address2",
+      label: "Address2",
+      control: "input",
+      placeholder: "",
+      
+    },
+    {
+      name: "address.city",
+      label: "City",
+      control: "input",
+      placeholder: "",
+      
+    },
+    {
+      name: "address.postalCode",
+      label: "PostalCode",
+      control: "input",
+      placeholder: "",
+      
+    },
+    {
+      name: "address.province",
+      label: "Province",
+      control: "select",
+      options: [
+        {
+          label: "Alberta",
+          value: "AB"
+        },
+        {
+          label: "BritishColumbia",
+          value: "BC"
+        },
+        {
+          label: "Manitoba",
+          value: "MB"
+        },
+        {
+          label: "NewBrunswick",
+          value: "NB"
+        },
+        {
+          label: "NewfoundlandandLabrador",
+          value: "NL"
+        },
+        {
+          label: "NorthwestTerritories",
+          value: "NT"
+        },
+        {
+          label: "NovaScotia",
+          value: "NS"
+        },
+        {
+          label: "Nunavut",
+          value: "NU"
+        },
+        {
+          label: "Ontario",
+          value: "ON"
+        },
+        {
+          label: "PrinceEdwardIsland",
+          value: "PE"
+        },
+        {
+          label: "Québec",
+          value: "QC"
+        },
+        {
+          label: "Saskatchewan",
+          value: "SK"
+        },
+        {
+          label: "Yukon",
+          value: "YT"
+        }
+      ],
+      placeholder: "",
+      
+    },
+    {
+      name: "dateOfBirth",
+      label: "Dateofbirth",
+      control: "datepicker",
+      options: {
+        format: "yyyy-mm-dd"
+      },
+      placeholder: "",
+      
+    },
+    {
+      name: "teamLevel",
+      label: "TeamLevel",
+      control: "select",
+      options: [
+        {
+          label: "Varsity",
+          value: "V"
+        },
+        {
+          label: "JuniorVarsity",
+          value: "JV"
+        },
+        {
+          label: "Freshmen.",
+          value: "F"
+        }
+      ],
+      value: "V",
+      placeholder: "",
+      roleattributes: [
+        {
+          role: "Athletic Director",
+          attribute: "N/A",
+          disabled: true,
+          visible: false
+        },
+        {
+          role: "Head Coach",
+          attribute: "N/A",
+          disabled: true,
+          visible: false
+        },
+        {
+          role: "Staff",
+          attribute: "N/A",
+          disabled: true,
+          visible: false
+        },
+        {
+          role: "Parent",
+          attribute: "N/A",
+          disabled: true,
+          visible: false
+        },
+        {
+          role: "Player",
+          attribute: "Contribute",
+          disabled: false,
+          visible: true
+        }
+      ]
+    },
+    {
+      name: "emailAddress",
+      label: "EmailAddress",
+      control: "input",
+      type: "email",
+      autocomplete="on"
+      placeholder: "",
+      required: true
+    },
+    {
+      name: "mobileNumber",
+      label: "Mobilenumber",
+      control: "input",
+      type: "tel",
+      placeholder: "",
+      required: false
+    },
+    {
+      name: "isActive",
+      label: "Active",
+      control: "boolean",
+      
+    },
+    {
+      control: "button",
+      label: "Savetoserver"
+    },
+    {
+      control: "help",
+      label: "Requiredfields..."
+    }
+  ]
+}

@@ -1,12 +1,14 @@
 {
   "pages": [
     {
+      "id": "",
       "pageUID": "",
       "uri": "/Profile.aspx",
       "title": "My Profile",
       "description": "",
       "categores": [
         {
+          "id": "",
           "name": "My Profile",
           "description": "",
           "headline": "",
@@ -15,6 +17,7 @@
           "footnote": "",
           "sections": [
             {
+              "id": "",
               "name": "Contact Information",
               "description": "",
               "headline": "My Profile Contact Information",
@@ -46,6 +49,7 @@
               ]
             },
             {
+              "id": "",
               "name": "Important Dates",
               "description": "",
               "headline": "Team Schedule",
@@ -155,12 +159,14 @@
       
     },
     {
+      "id": "",
       "pageUID": "",
       "uri": "/CategoryFields.aspx",
       "title": "Client Information Categories",
       "description": "",
       "categores": [
         {
+          "id": "health_info",
           "CategoryID": "338",
           "name": "Health",
           "description": "Client Health Info",
@@ -169,6 +175,7 @@
           "banner": "",
           "sections": [
             {
+              "id": "client_identification",
               "sectionUID": "",
               "name": "Client Identification",
               "description": "",
@@ -187,10 +194,11 @@
               ]
             },
             {
+              "id": "response_fields",
               "sectionUID": "",
               "name": "Response Fields",
               "description": "",
-              "headline": "",
+              "headline": "Medical Informtion",
               "subhead": "",
               "banner": "",
               "footnote": " ",
@@ -318,10 +326,11 @@
               
             },
             {
+              "id": "case_notes",
               "sectionUID": "",
               "name": "Case Notes",
               "description": "",
-              "headline": "",
+              "headline": "Case Notes",
               "subhead": "",
               "banner": "",
               "footnote": " ",
@@ -341,10 +350,22 @@
           
         },
         {
+          "id": "housing_info",
           "CategoryID": "",
           "name": "Housing",
-          "description": "Client Housing Info",
+          "description": "Client Housing",
           "sections": [
+            {
+              "id": "housing_response_fields",
+              "sectionUID": "",
+              "name": "Response Fields",
+              "description": "",
+              "headline": "Housing Informtion",
+              "subhead": "",
+              "banner": "",
+              "footnote": " ",
+              "fields": []
+            }
             
           ]
         }

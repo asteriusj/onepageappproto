@@ -37,3 +37,8 @@ git remote add origin https://github.com/asteriusj/onepageappproto.git
 git push -u origin master
 
 
+# after initial commit and push
+
+git add .
+git commit -m "commit "
+git push - u origin master

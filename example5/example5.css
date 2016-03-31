@@ -1,0 +1,54 @@
+
+    header.navbar-inverse {
+            border-radius: 0;
+        }
+
+        footer.navbar-default {
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+        .shiftable-collection-item {
+            padding: 10px;
+            text-align: center;
+            height: 160px;
+            border: 1px solid #999;
+            margin-right: 10px;
+        }
+
+            .shiftable-collection-item:hover, .shiftable-collection-item.selected {
+                background-color: #ddd;
+            }
+
+        .shiftable-collection img {
+            max-width: 100%;
+            max-height: 100px;
+        }
+
+        .bs-sidebar .nav > .active > ul {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .bs-sidebar .nav > li > a {
+            padding: 2px 4px;
+        }
+
+        .bs-sidebar .nav > li.active {
+            background-color: #428bca;
+            border-radius: 0;
+        }
+
+            .bs-sidebar .nav > li.active > a {
+                color: white;
+            }
+
+                .bs-sidebar .nav > li.active > a:hover {
+                    background-color: #428bca;
+                }
+
+                .bs-sidebar .nav > li.active, .bs-sidebar .nav > li.active > a:hover {
+                    background-color: #428bca;
+                }
+
+

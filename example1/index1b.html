@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Backform.js - 1a: Info forms  for Manager</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="3rd/jquery.min.js" type="text/javascript"></script>
+    <script src="3rd/bootstrap.min.js" type="text/javascript"></script>
+    <link href="3rd/bootstrap.min.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <script src="3rd/bootstrap-datepicker.js" type="text/javascript"></script>
+    <link href="3rd/bootstrap-datepicker.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <script src="3rd/underscore.js" type="text/javascript"></script>
+    <script src="3rd/backbone.js" type="text/javascript"></script>
+
+    
+
+    <script src="src/backform.js" type="text/javascript"></script>
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  
+    <script type="text/javascript" src="app.js"></script>
+  
+    <script src="example1a.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+
+    </script>
+    
+</head>
+<body >
+    <script>
+        var theRole = "Player";
+        var thePrivilege = "Review";
+        var theTitle = "" + theRole + " has privilege to " + thePrivilege ;
+
+    </script>
+
+  <div id="sidebar" class="interface">
+
+   <p><a href="index1a.html" title="1a: Info forms  for Manager">Example 1a</a></p>
+   <p><a href="index1b.html" title="1b: Info forms  for Reviewer">Example 1b</a></p>
+   <p><a href="index1c.html" title="1c: Info forms  for Contributor">Example 1c</a></p>
+   
+  </div>
+
+    <div class="container">
+
+      <h1><div id="headline1">Here is where the headline goes</div></h1>
+      <div id="subhead1"></div>
+
+      <div id="profile_info" class="category">
+        <h2><div>Player Profile Info</div></h2>
+        <em></em>
+        
+        
+        <div id="contact_info" class="row section">
+            <div class="col-md-12">                  
+                <h3><div>Contact Information</div></h3>
+                <em>First, the easy questions</em>
+                
+                <form id="form-contact_info" class="form-horizontal"></form>
+            </div>
+        </div>
+        
+        <div id="profile_photos" class="row section">
+            <div class="col-md-12">                  
+                <h3><div>Profile Photos</div></h3>
+                <em></em>
+                
+                <form id="form-profile_photos" class="form-horizontal"></form>
+            </div>
+        </div>
+        
+      </div>
+
+
+      <div id="health_info" class="category">
+        <h2><div>Client Health </div></h2>
+        <em></em>
+        
+        
+        <div id="client_identifcation" class="row section">
+            <div class="col-md-12">                  
+                <h3><div>Client Identity</div></h3>
+                <em></em>
+                
+                <form id="form-client_identifcation" class="form-horizontal"></form>
+            </div>
+        </div>
+        
+        <div id="medical_response_fields" class="row section">
+            <div class="col-md-12">                  
+                <h3><div>Medical Informtion</div></h3>
+                <em></em>
+                
+                <form id="form-medical_response_fields" class="form-horizontal"></form>
+            </div>
+        </div>
+        
+        <div id="medical_case_notes" class="row section">
+            <div class="col-md-12">                  
+                <h3><div>Case Notes</div></h3>
+                <em></em>
+                
+                <form id="form-medical_case_notes" class="form-horizontal"></form>
+            </div>
+        </div>
+        
+      </div>
+
+
+      <div id="housing_info" class="category">
+        <h2><div>Client Housing</div></h2>
+        <em></em>
+        
+        
+        <div id="housing_response_fields" class="row section">
+            <div class="col-md-12">                  
+                <h3><div>Housing Information</div></h3>
+                <em></em>
+                
+                <form id="form-housing_response_fields" class="form-horizontal"></form>
+            </div>
+        </div>         
+      </div>
+      
+      
+         
+    </div>
+    <br />
+    <div id="push"></div>
+
+
+
+<script>
+
+document.getElementById("headline1").innerHTML = theTitle;
+
+document.getElementById("profile_info").style.visibility = "visible";
+document.getElementById("contact_info").style.display = "block";
+document.getElementById("profile_photos").style.display = "block";
+
+document.getElementById("health_info").style.visibility = "hidden";
+document.getElementById("client_identifcation").style.display = "block";
+document.getElementById("medical_response_fields").style.display = "block";
+document.getElementById("medical_case_notes").style.display = "block";
+
+document.getElementById("housing_info").style.visibility = "visible";
+document.getElementById("housing_response_fields").style.display = "block";
+
+</script>
+
+
+</body>
+</html>
+
