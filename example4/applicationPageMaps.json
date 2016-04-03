@@ -1,0 +1,672 @@
+{
+  "pages": [
+    {
+      "typeOf": "page",
+      "id": "member_profile",
+      "pageUID": "",
+      "uri": "/MemberProfile.aspx",
+      "title": "Member Profile",
+      "description": "Profile Information and Fields for Member",
+      "categories": [
+        {
+          "typeOf": "category",
+          "id": "profile_info",
+          "name": "Profile Info",
+          "description": "",
+          "headline": "Member Profile Info",
+          "subhead": "Information sections for contacting member",
+          "banner": "",
+          "footnote": "fill it our completely to enable the next step",
+          "sections": [
+            {
+              "typeOf": "section",
+              "id": "contact_info",
+              "name": "Contact Information",
+              "description": "",
+              "headline": "Profile Contact Information",
+              "subhead": "Tell us how you can be contacted and addressed",
+              "banner": "",
+              "footnote": "",
+              "instructions": "",
+              "forms": [
+                {
+                  "el": "#form-contact_info",
+                  "typeOf": "form",
+                  "id": "form_contact_info"
+                }
+              ],
+              "roleprivileges": [
+                {
+                  "role": "Leader Manager",
+                  "privilege": {
+                    "name": "Manage"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": true
+                  }
+                },
+                {
+                  "role": "Group Director",
+                  "privilege": {
+                    "name": "Contribute"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": false
+                  }
+                },
+                {
+                  "role": "Coach Staff",
+                  "privilege": {
+                    "name": "Review"
+                  },
+                  "permissions": {
+                    "c": false,
+                    "r": true,
+                    "u": true
+                  }
+                },
+                {
+                  "role": "Client Player",
+                  "privilege": {
+                    "name": "Observe"
+                  },
+                  "permissions": {
+                    "r": true
+                  }
+                }
+              ]
+            },
+            {
+              "typeOf": "section",
+              "id": "profile_photos",
+              "name": "Profile Photos",
+              "description": "",
+              "headline": "Profile Photos",
+              "subhead": "Take - Upload - Share",
+              "banner": "",
+              "footnote": "",
+              "instructions": "",
+              "forms": [
+                {
+                  "el": "#form-profile_photos",
+                  "typeOf": "form",
+                  "id": "form_profile_photos"
+                }
+              ],
+              "roleprivileges": [
+                {
+                  "role": "Leader Manager",
+                  "privilege": {
+                    "name": "Manage"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": true
+                  }
+                },
+                {
+                  "role": "Group Director",
+                  "privilege": {
+                    "name": "Review"
+                  },
+                  "permissions": {
+                    "c": false,
+                    "r": true,
+                    "u": true,
+                    "d": false
+                  }
+                },
+                {
+                  "role": "Coach Staff",
+                  "privilege": {
+                    "name": "No Access"
+                  },
+                  "permissions": null
+                },
+                {
+                  "role": "Client Player",
+                  "privilege": {
+                    "name": "Observe"
+                  },
+                  "permissions": {
+                    "r": true
+                  }
+                }
+              ]
+            }
+          ],
+          "roleprivileges": [
+            {
+              "role": "Leader Manager",
+              "privilege": {
+                "name": "Manage"
+              },
+              "permissions": {
+                "c": true,
+                "r": true,
+                "u": true,
+                "d": true
+              }
+            },
+            {
+              "role": "Group Director",
+              "privilege": {
+                "name": "Contribute"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": true,
+                "d": false
+              }
+            },
+            {
+              "role": "Coach Staff",
+              "privilege": {
+                "name": "Review"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": false,
+                "d": false
+              }
+            },
+            {
+              "role": "Client Player",
+              "privilege": {
+                "name": "Observe"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": false,
+                "d": false
+              }
+            },
+            {
+              "role": "Other",
+              "privilege": {
+                "name": "No Access"
+              },
+              "permissions": null
+            }
+          ]
+        },
+        {
+          "typeOf": "category",
+          "id": "health_info",
+          "name": "Health Info",
+          "description": "",
+          "headline": "Health Info",
+          "subhead": "",
+          "banner": "",
+          "footnote": "",
+          "sections": [
+            {
+              "typeOf": "section",
+              "id": "client_identifcation",
+              "name": "Client Identification",
+              "description": "",
+              "headline": "Client Identity Information",
+              "subhead": "",
+              "banner": "",
+              "footnote": "",
+              "instructions": "",
+              "forms": [
+                {
+                  "el": "#form-client_identifcation",
+                  "typeOf": "form",
+                  "id": "form_client_identifcation"
+                }
+              ],
+              "roleprivileges": [
+                {
+                  "role": "Leader Manager",
+                  "privilege": {
+                    "name": "Manage"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": true
+                  }
+                },
+                {
+                  "role": "Group Director",
+                  "privilege": {
+                    "name": "Contribute"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": false
+                  }
+                },
+                {
+                  "role": "Coach Staff",
+                  "privilege": {
+                    "name": "Review"
+                  },
+                  "permissions": {
+                    "c": false,
+                    "r": true,
+                    "u": true
+                  }
+                },
+                {
+                  "role": "Client Player",
+                  "privilege": {
+                    "name": "Observe"
+                  },
+                  "permissions": {
+                    "r": true
+                  }
+                }
+              ]
+            },
+            {
+              "typeOf": "section",
+              "id": "medical_response_fields",
+              "name": "Medical Informtion",
+              "description": "",
+              "headline": "Medical Informtion",
+              "subhead": "",
+              "banner": "",
+              "footnote": "",
+              "instructions": "",
+              "forms": [
+                {
+                  "el": "#form-medical_response_fields",
+                  "typeOf": "form",
+                  "id": "form_medical_response_fields"
+                }
+              ],
+              "roleprivileges": [
+                {
+                  "role": "Leader Manager",
+                  "privilege": {
+                    "name": "Manage"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": true
+                  }
+                },
+                {
+                  "role": "Group Director",
+                  "privilege": {
+                    "name": "Contribute"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": false
+                  }
+                },
+                {
+                  "role": "Coach Staff",
+                  "privilege": {
+                    "name": "Review"
+                  },
+                  "permissions": {
+                    "c": false,
+                    "r": true,
+                    "u": true
+                  }
+                },
+                {
+                  "role": "Client Player",
+                  "privilege": {
+                    "name": "Observe"
+                  },
+                  "permissions": {
+                    "r": true
+                  }
+                }
+              ]
+            },
+            {
+              "typeOf": "section",
+              "id": "medical_case_notes",
+              "name": "Case Notes",
+              "description": "",
+              "headline": "Medical Case Notes",
+              "subhead": "",
+              "banner": "",
+              "footnote": "",
+              "instructions": "",
+              "forms": [
+                {
+                  "el": "#form-medical_case_notes",
+                  "typeOf": "form",
+                  "id": "form_medical_case_notes"
+                }
+              ],
+              "roleprivileges": [
+                {
+                  "role": "Leader Manager",
+                  "privilege": {
+                    "name": "Manage"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": true
+                  }
+                },
+                {
+                  "role": "Group Director",
+                  "privilege": {
+                    "name": "Contribute"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": false
+                  }
+                },
+                {
+                  "role": "Coach Staff",
+                  "privilege": {
+                    "name": "Review"
+                  },
+                  "permissions": {
+                    "c": false,
+                    "r": true,
+                    "u": true
+                  }
+                },
+                {
+                  "role": "Client Player",
+                  "privilege": {
+                    "name": "Observe"
+                  },
+                  "permissions": {
+                    "r": true
+                  }
+                }
+              ]
+            }
+          ],
+          "roleprivileges": [
+            {
+              "role": "Leader Manager",
+              "privilege": {
+                "name": "Manage"
+              },
+              "permissions": {
+                "c": true,
+                "r": true,
+                "u": true,
+                "d": true
+              }
+            },
+            {
+              "role": "Group Director",
+              "privilege": {
+                "name": "Contribute"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": true,
+                "d": false
+              }
+            },
+            {
+              "role": "Coach Staff",
+              "privilege": {
+                "name": "Review"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": false,
+                "d": false
+              }
+            },
+            {
+              "role": "Client Player",
+              "privilege": {
+                "name": "Observe"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": false,
+                "d": false
+              }
+            },
+            {
+              "role": "Other",
+              "privilege": {
+                "name": "No Access"
+              },
+              "permissions": null
+            }
+          ]
+        },
+        {
+          "typeOf": "category",
+          "id": "housing_info",
+          "name": "Client Housing",
+          "description": "",
+          "headline": "Client Housing",
+          "subhead": "",
+          "banner": "",
+          "footnote": "",
+          "sections": [
+            {
+              "typeOf": "section",
+              "id": "housing_response_fields",
+              "name": "Housing Information",
+              "description": "",
+              "headline": "Housing Information",
+              "subhead": "",
+              "banner": "",
+              "footnote": "",
+              "instructions": "",
+              "forms": [
+                {
+                  "el": "#form-housing_response_fields",
+                  "typeOf": "form",
+                  "id": "form_housing_response_fields"
+                }
+              ],
+              "roleprivileges": [
+                {
+                  "role": "Leader Manager",
+                  "privilege": {
+                    "name": "Manage"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": true
+                  }
+                },
+                {
+                  "role": "Group Director",
+                  "privilege": {
+                    "name": "Contribute"
+                  },
+                  "permissions": {
+                    "c": true,
+                    "r": true,
+                    "u": true,
+                    "d": false
+                  }
+                },
+                {
+                  "role": "Coach Staff",
+                  "privilege": {
+                    "name": "Review"
+                  },
+                  "permissions": {
+                    "c": false,
+                    "r": true,
+                    "u": true
+                  }
+                },
+                {
+                  "role": "Client Player",
+                  "privilege": {
+                    "name": "Observe"
+                  },
+                  "permissions": {
+                    "r": true
+                  }
+                }
+              ]
+            }
+          ],
+          "roleprivileges": [
+            {
+              "role": "Leader Manager",
+              "privilege": {
+                "name": "Manage"
+              },
+              "permissions": {
+                "c": true,
+                "r": true,
+                "u": true,
+                "d": true
+              }
+            },
+            {
+              "role": "Group Director",
+              "privilege": {
+                "name": "Contribute"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": true,
+                "d": false
+              }
+            },
+            {
+              "role": "Coach Staff",
+              "privilege": {
+                "name": "Review"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": false,
+                "d": false
+              }
+            },
+            {
+              "role": "Client Player",
+              "privilege": {
+                "name": "Observe"
+              },
+              "permissions": {
+                "c": false,
+                "r": true,
+                "u": false,
+                "d": false
+              }
+            },
+            {
+              "role": "Other",
+              "privilege": {
+                "name": "No Access"
+              },
+              "permissions": null
+            }
+          ]
+        }
+      ],
+      "roleprivileges": [
+        {
+          "role": "Leader Manager",
+          "privilege": {
+            "name": "Manage",
+            "description": "Permission to create, update and delete",
+            "aka": "Admin"
+          },
+          "permissions": {
+            "c": true,
+            "r": true,
+            "u": true,
+            "d": true,
+            "x": false
+          }
+        },
+        {
+          "role": "Group Director",
+          "privilege": {
+            "name": "Contribute",
+            "description": "Permission to create and update but not delete",
+            "aka": "Create, View Update,  Read Write"
+          },
+          "permissions": {
+            "c": false,
+            "r": true,
+            "u": true,
+            "d": false,
+            "x": true
+          }
+        },
+        {
+          "role": "Staff",
+          "privilege": {
+            "name": "Review",
+            "description": "Permission to read as well as change",
+            "aka": "Read-Write, View Update, Read Write, Change"
+          },
+          "permissions": {
+            "c": false,
+            "r": true,
+            "u": false,
+            "d": false,
+            "x": false
+          }
+        },
+        {
+          "role": "Player",
+          "privilege": {
+            "name": "Observe",
+            "description": "Permission to read or view but not change",
+            "aka": "Read-Only, View-Only, Read, View"
+          },
+          "permissions": {
+            "c": false,
+            "r": true,
+            "u": false,
+            "d": false,
+            "x": true
+          }
+        },
+        {
+          "role": "Other",
+          "privilege": {
+            "name": "No Access",
+            "description": "No permissions or access privileges",
+            "aka": "None"
+          },
+          "permissions": null
+        }
+      ]
+    }
+  ]
+}

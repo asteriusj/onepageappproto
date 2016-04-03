@@ -1,0 +1,26 @@
+{
+  "trees": [
+    {
+      "id": "101",
+      "prefix": "Mr",
+      "givenName": "Andre",
+      "familyName": "Jones",
+      "nickName": "",
+      "suffix": "",
+      "fullName": "",
+      "gender": "MAL",
+      "address": {
+        "address1": "1751 rue Richardson",
+        "address2": "Suite 3.105",
+        "localeCity": "Montréal",
+        "province": "regionState",
+        "postalCode": "H3K 1G6",
+        "countryCode": "CA"
+      },
+      "dateOfBirth": "",
+      "teamLevel": "",
+      "emailAddress": "test2@myapplaud.com",
+      "mobileNumber": "8885554444"
+    }
+  ]
+}

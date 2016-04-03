@@ -1,12 +1,14 @@
 {
   "pages": [
     {
+      "id": "",
       "pageUID": "",
       "uri": "/Profile.aspx",
       "title": "My Profile",
       "description": "",
       "categores": [
         {
+          "id": "",
           "name": "My Profile",
           "description": "",
           "headline": "",
@@ -24,10 +26,10 @@
               "instructions": "",
               "forms": [
                 {
-                  el: "#form-contact_info"
+                  "el": "#form-contact_info"
                 }
               ],
-              "roleattributes": [
+              "roleprivleges": [
                 {
                   "role": "Leader Manager",
                   "privilege": "Manage",
@@ -41,41 +43,13 @@
                 {
                   "privilege": "Contribute",
                   "permission": "ru"
-                },
-                
+                }
               ]
-            },
-            {
-              "name": "Important Dates",
-              "description": "",
-              "headline": "Team Schedule",
-              "subhead": "Your memory collection campaign will be customized to your schedule.",
-              "banner": "",
-              "footnote": "",
-              "instructions": "",
-              "forms": [
-                
-              ],
-              "roleattributes": [
-                {
-                  "role": "Leader Manager",
-                  "privilege": "Manage",
-                  "permission": "crud"
-                },
-                {
-                  "role": "Staff",
-                  "privilege": "Review",
-                  "permission": "ru"
-                },
-                
-              ]
-            },
-            
-          ],
-          
+            }
+          ]
         }
       ],
-      "roleattributes": [
+      "roleprivleges": [
         {
           "role": "Leader Manager",
           "privilege": {
@@ -89,8 +63,7 @@
             "u": true,
             "d": true,
             "x": false
-          },
-          
+          }
         },
         {
           "role": "Group Director",
@@ -105,8 +78,7 @@
             "u": true,
             "d": false,
             "x": true
-          },
-          
+          }
         },
         {
           "role": "Staff",
@@ -121,8 +93,7 @@
             "u": false,
             "d": false,
             "x": false
-          },
-          
+          }
         },
         {
           "role": "Player",
@@ -137,8 +108,7 @@
             "u": false,
             "d": false,
             "x": true
-          },
-          
+          }
         },
         {
           "role": "Other",
@@ -147,287 +117,9 @@
             "description": "No permissions or access privileges",
             "aka": "None"
           },
-          "permissions": null,
-          
-        },
-        
-      ],
-      
-    },
-    {
-      "pageUID": "",
-      "uri": "/CategoryFields.aspx",
-      "title": "Client Information Categories",
-      "description": "",
-      "categores": [
-        {
-          "CategoryID": "338",
-          "name": "Health",
-          "description": "Client Health Info",
-          "headline": "",
-          "subhead": "",
-          "banner": "",
-          "sections": [
-            {
-              "sectionUID": "",
-              "name": "Client Identification",
-              "description": "",
-              "headline": "Client Identity",
-              "subhead": "",
-              "banner": "",
-              "footnote": " ",
-              "instructions": "",
-              "fields": [
-                {
-                  "ClientID": "33891",
-                  "ClientName": "Test ,  Chase",
-                  "ClientDateOfBirth": "3/10/1987 12:00:00 AM",
-                  
-                }
-              ]
-            },
-            {
-              "sectionUID": "",
-              "name": "Response Fields",
-              "description": "",
-              "headline": "",
-              "subhead": "",
-              "banner": "",
-              "footnote": " ",
-              "fields": [
-                {
-                  "FieldID": "406",
-                  "FieldStandardName": "MedicalConcern",
-                  "FieldSortOrder": "0",
-                  "FieldType": "YesNo",
-                  "FieldDefaultValue": "",
-                  "FieldLabel": "Medical Concern:",
-                  "FieldOptions": [
-                    {
-                      "OptionID": "177",
-                      "OptionStandardName": "Select",
-                      "OptionLabel": "Select..."
-                    },
-                    {
-                      "OptionID": "178",
-                      "OptionStandardName": "Yes",
-                      "OptionLabel": "Yes"
-                    },
-                    {
-                      "OptionID": "179",
-                      "OptionStandardName": "No",
-                      "OptionLabel": "No"
-                    }
-                  ],
-                  "ResponseID": "1628985",
-                  "ResponseType": "List",
-                  "ResponseDateTime": "3/18/2015 3:11:11 PM",
-                  "ResponseValues": [
-                    {
-                      "ItemID": "179",
-                      "ItemValue": "No"
-                    }
-                  ]
-                },
-                {
-                  "FieldID": "407",
-                  "FieldStandardName": "GeneralHealth",
-                  "FieldSortOrder": "5",
-                  "FieldType": "List",
-                  "FieldDefaultValue": "",
-                  "FieldLabel": "General Health:",
-                  "FieldOptions": [
-                    {
-                      "OptionID": "177",
-                      "OptionStandardName": "Select",
-                      "OptionLabel": "Select..."
-                    },
-                    {
-                      "OptionID": "277",
-                      "OptionStandardName": "GeneralHealth_Excellent",
-                      "OptionLabel": "Excellent"
-                    },
-                    {
-                      "OptionID": "278",
-                      "OptionStandardName": "GeneralHealth_Good",
-                      "OptionLabel": "Good"
-                    },
-                    {
-                      "OptionID": "279",
-                      "OptionStandardName": "GeneralHealth_Average",
-                      "OptionLabel": "Average"
-                    },
-                    {
-                      "OptionID": "280",
-                      "OptionStandardName": "GeneralHealth_Poor",
-                      "OptionLabel": "Poor"
-                    },
-                    {
-                      "OptionID": "281",
-                      "OptionStandardName": "GeneralHealth_Failing",
-                      "OptionLabel": "Failing"
-                    }
-                  ],
-                  "ResponseID": "1628986",
-                  "ResponseType": "List",
-                  "ResponseDateTime": "3/18/2015 3:11:17 PM",
-                  "ResponseValues": [
-                    {
-                      "ItemID": "278",
-                      "ItemValue": "Good"
-                    }
-                  ]
-                },
-                {
-                  "FieldID": "432",
-                  "FieldStandardName": "Pregnant",
-                  "FieldSortOrder": "130",
-                  "FieldType": "YesNo",
-                  "FieldDefaultValue": "",
-                  "FieldLabel": "Pregnant:",
-                  "FieldOptions": [
-                    {
-                      "OptionID": "177",
-                      "OptionStandardName": "Select",
-                      "OptionLabel": "Select..."
-                    },
-                    {
-                      "OptionID": "178",
-                      "OptionStandardName": "Yes",
-                      "OptionLabel": "Yes"
-                    },
-                    {
-                      "OptionID": "179",
-                      "OptionStandardName": "No",
-                      "OptionLabel": "No"
-                    }
-                  ],
-                  "ResponseID": "1628982",
-                  "ResponseType": "List",
-                  "ResponseDateTime": "3/18/2015 2:33:41 PM",
-                  "ResponseValues": [
-                    {
-                      "ItemID": "179",
-                      "ItemValue": "No"
-                    }
-                  ]
-                },
-                
-              ],
-              "footnote": "",
-              
-            },
-            {
-              "sectionUID": "",
-              "name": "Case Notes",
-              "description": "",
-              "headline": "",
-              "subhead": "",
-              "banner": "",
-              "footnote": " ",
-              "fields": [
-                
-              ],
-              "roleattributes": [
-                {
-                  "role": "Leader Manager",
-                  "privilege": "Contribute",
-                  "permission": "cru"
-                },
-                
-              ]
-            }
-          ],
-          
-        },
-        {
-          "CategoryID": "",
-          "name": "Housing",
-          "description": "Client Housing Info",
-          "sections": [
-            
-          ]
+          "permissions": null
         }
-      ],
-      "roleattributes": [
-        {
-          "role": "Leader Manager",
-          "privilege": {
-            "name": "Manage",
-            "description": "Permission to create, update and delete",
-            "aka": "Admin"
-          },
-          "permissions": {
-            "c": true,
-            "r": true,
-            "u": true,
-            "d": true,
-            "x": false
-          },
-          
-        },
-        {
-          "role": "Director",
-          "privilege": {
-            "name": "Contribute",
-            "description": "Permission to create and update but not delete",
-            "aka": "Create, View Update,  Read Write"
-          },
-          "permissions": {
-            "c": false,
-            "r": true,
-            "u": true,
-            "d": false,
-            "x": true
-          },
-          
-        },
-        {
-          "role": "Coach",
-          "privilege": {
-            "name": "Review",
-            "description": "Permission to read as well as change",
-            "aka": "Read-Write, View Update, Read Write, Change"
-          },
-          "permissions": {
-            "c": false,
-            "r": true,
-            "u": false,
-            "d": false,
-            "x": false
-          },
-          
-        },
-        {
-          "role": "Staff",
-          "privilege": {
-            "name": "Observe",
-            "description": "Permission to read or view but not change",
-            "aka": "Read-Only, View-Only, Read, View"
-          },
-          "permissions": {
-            "c": false,
-            "r": true,
-            "u": false,
-            "d": false,
-            "x": true
-          },
-          
-        },
-        {
-          "role": "Client",
-          "privilege": {
-            "name": "No Access",
-            "description": "No permissions or access privileges",
-            "aka": "None"
-          },
-          "permissions": null,
-          
-        },
-        
-      ],
-      
-    },
-    
+      ]
+    }
   ]
 }

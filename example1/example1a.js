@@ -8,7 +8,7 @@
     };
 
     
-    
+    // example for contact information
     var contactInfo = window.contactInfo = new Backbone.Model(
             {
               id: 101,
@@ -34,10 +34,7 @@
           }    
         );
     
-    
-
-    
-
+    // Form definitions for contact info
     new Backform.Form({
         el: "#form-contact_info",
         model: contactInfo,
@@ -50,22 +47,25 @@
     readonly: false,
     disabled: false,
     visible: true,
-    roleattributes: [
+    roleprivileges: [
       {
         role: "Leader Manager",
         privilege: "Manage",
+        access: "crud",
         disabled: false,
         visible: true
       },
       {
         role: "Staff",
         privilege: "Observe",
+        access: "r",
         disabled: false,
         visible: false
       },
       {
         role: "Player",
         privilege: "None",
+        access: null,
         disabled: false,
         visible: false
       }
@@ -101,22 +101,25 @@
     readonly: false,
     disabled: false,
     visible: true,
-    roleattributes: [
+    roleprivileges: [
       {
         role: "Leader Manager",
         privilege: "Manage",
+        access: "crud",
         disabled: false,
         visible: true
       },
       {
         role: "Staff",
-        privilege: "Contribute",
+        privilege: "Observe",
+        access: "r",
         disabled: false,
         visible: true
       },
       {
         role: "Player",
         privilege: "None",
+        access: null,
         disabled: false,
         visible: false
       }
@@ -130,30 +133,27 @@
     readonly: false,
     disabled: false,
     visible: true,
-    roleattributes: [
+    roleprivileges: [
       {
         role: "Leader Manager",
         privilege: "Contribute",
-        required: false,
-        readonly: false,
+        access: "cru",
         disabled: false,
         visible: true
       },
       {
         role: "Staff",
         privilege: "Observe",
-        required: true,
-        readonly: false,
+        access: "r",
         disabled: false,
         visible: true
       },
       {
         role: "Player",
         privilege: "None",
-        required: true,
-        readonly: true,
+        access: null,
         disabled: false,
-        visible: true
+        visible: false
       }
     ]
   },
@@ -181,30 +181,27 @@
     readonly: false,
     disabled: false,
     visible: true,
-    roleattributes: [
+    roleprivileges: [
       {
         role: "Leader Manager",
         privilege: "Manage",
-        required: false,
-        readonly: false,
+        access: "crud",
         disabled: false,
         visible: true
       },
       {
         role: "Staff",
-        privilege: "Contribute",
-        required: true,
-        readonly: false,
+        privilege: "Observe",
+        access: "r",
         disabled: false,
-        visible: true
+        visible: false
       },
       {
         role: "Player",
-        privilege: "N/A",
-        required: true,
-        readonly: true,
+        privilege: "None",
+        access: null,
         disabled: false,
-        visible: true
+        visible: false
       }
     ]
   },
@@ -223,35 +220,29 @@
     disabled: false,
     visible: true,
     helpMessage: "Provide the suffix for your name such as Jr, MD, or III.",
-    roleattributes: [
+    roleprivileges: [
       {
         role: "Leader Manager",
         privilege: "Contribute",
-        required: false,
-        readonly: false,
+        access: "cru",
         disabled: false,
         visible: true
       },
       {
         role: "Staff",
         privilege: "Contribute",
-        required: false,
-        readonly: false,
+        access: "cru",
         disabled: false,
-        visible: true
+        visible: false
       },
       {
         role: "Player",
         privilege: "None",
-        required: false,
-        readonly: false,
+        access: null,
         disabled: false,
         visible: false
       }
     ]
-  },
-  {
-    control: "spacer"
   },
   {
     name: "address.address1",
@@ -380,30 +371,27 @@
     readonly: false,
     disabled: false,
     visible: true,
-    roleattributes: [
+    roleprivileges: [
       {
         role: "Leader Manager",
         privilege: "Manage",
-        required: false,
-        readonly: false,
+        access: "crud",
         disabled: false,
         visible: true
       },
       {
         role: "Staff",
         privilege: "Observe",
-        required: false,
-        readonly: true,
+        access: "r",
         disabled: false,
-        visible: true
+        visible: false
       },
       {
         role: "Player",
-        privilege: "N/A",
-        required: true,
-        readonly: false,
+        privilege: "None",
+        access: null,
         disabled: false,
-        visible: true
+        visible: false
       }
     ]
   },
@@ -446,13 +434,590 @@
         }
     }).render();
 
-
     contactInfo.on("change", function () {
         $("#object").text(JSON.stringify(contactInfo.toJSON(), null, 2));
     }).trigger("change");
 
+  
+  
+  
+ 
+    //sample for profile facts
+    var profileFacts = window.profileFacts = new Backbone.Model({
+            ProfileFacts_dlstFactsEditAns_ctl01: "a onea",
+            ProfileFacts_dlstFactsEditAns_ctl02: "and a twoa",
+            ProfileFacts_dlstFactsEditAns_ctl03: "and a threea",
+            ProfileFacts_dlstFactsEditAns_ctl04: "",
+            ProfileFacts_dlstFactsEditAns_ctl05: "",
+            ProfileFacts_dlstFactsEditAns_ctl06: "",
+            ProfileFacts_dlstFactsEditAns_ctl04: "",
+            ProfileFacts_dlstFactsEditAns_ctl05: "",
+            ProfileFacts_dlstFactsEditAns_ctl06: "",
+           
+        });
+        
+   
+   
+        
+        
+    // content and form defs for profile photos
+    var profilePhotos = window.profilePhotos = new Backbone.Model({
+            profilePhoto_1: "http://myapplaud.com/ApplaudAssets/UserProfileImages/PersonID_49996/ThumbNail_49996_0a8d29dc.jpg?ref=131028977315767161",
+
+ 
+        }); 
+
+    new Backform.Form({
+        el: "#form-profile_photos",
+        model: profilePhotos,
+        fields: [
+{
+    name: "profilePhoto_1",
+    label: "Profile Photo 1",
+    control: "input",
+    required: false,
+    readonly: false,
+    disabled: false,
+    visible: true,
+    roleprivileges: [
+  {
+    role: "Leader Manager",
+    privilege: "Manage",
+    access: "crud",
+    disabled: false,
+    visible: true
+  },
+  {
+    role: "Staff",
+    privilege: "Observe",
+    access: "r",
+    disabled: false,
+    visible: false
+  },
+  {
+    role: "Player",
+    privilege: "None",
+    access: null,
+    disabled: false,
+    visible: false
+  }
+]
+  
+  
+,
 
 
+        events: {
+            "submit": function (e) {
+                e.preventDefault();
+                this.model.save().done(function (result) {
+                    console.log(result);
+                    alert("Form saved to server!");
+                });
+                return false;
+            }
+        }
+    }).render();
+
+    profilePhotos.on("change", function () {
+        $("#object").text(JSON.stringify(profilePhotos.toJSON(), null, 2));
+    }).trigger("change");
+     
+
+      
+      
+      
+      
+    // Example with medical information
+    var medicalInfo = new Backbone.Model({ 
+            
+            MedicalConcern: "No",
+            GeneralHealth: "Good",
+            LastPhysicalDate: "2/13/2015 12:00:00 AM",
+            HealthCareProvider: "4593",
+            HealthCaseManager: "",
+            Insurance: "Yes",
+            MedicalCard: "No",
+            Vision: "Failing",
+            Hearing: "Excellent",
+            Teeth: "Excellent",
+            Sleep: "Average",
+            Dietary: "Average",
+            Hygiene: "Excellent",
+            Smoker: "Yes",
+            Injuries: "No",
+            Allergies: "No",
+            AIDSHIV: "No",
+            HepOther: "No",
+            TB: "No",
+            STD: "No",
+            ChronicProblems: "No",
+            PhysicalDisability: "No",
+            Seizures: "No",
+            Prescription: "Yes",
+            TakingProperly: "Yes",
+            Pregnant: "Yes",
+            DueDate: ""
+                        
+        });
+        
+    new Backform.Form({
+        el: "#form-medical_response_fields",
+        model: medicalInfo,
+        fields: [
+  {
+    name: "MedicalConcern",
+    label: "Medical Concern",
+    control: "input"
+  },
+  {
+    name: "GeneralHealth",
+    label: "General Health",
+    control: "input"
+  },
+  {
+    name: "LastPhysicalDate",
+    label: "Last Physical Date",
+    control: "datepicker",
+    placeholder: "mm/dd/yyyy",
+    options: {
+      format: "mm-dd-yyyy"
+    },
+    required: false,
+    readonly: false,
+    disabled: false,
+    visible: true
+  },
+  {
+    name: "HealthCareProvider",
+    label: "HealthCare Provider",
+    control: "input"
+  },
+  {
+    name: "HealthCaseManager",
+    label: "Health Case Manager",
+    control: "input"
+  },
+  {
+    name: "Insurance",
+    label: "Insurance",
+    control: "boolean"
+  },
+  {
+    name: "MedicalCard",
+    label: "MedicalCard",
+    control: "boolean"
+  },
+  {
+    name: "Vision",
+    label: "Vision",
+    control: "select",
+    options: [
+      {
+        label: "Excellent",
+        value: "Excellent"
+      },
+      {
+        label: "Good",
+        value: "Good"
+      },
+      {
+        label: "Average",
+        value: "Average"
+      },
+      {
+        label: "Poor",
+        value: "Poor"
+      },
+      {
+        label: "Failing",
+        value: "Failing"
+      },
+      
+    ],
+    disabled: false,
+    visible: true
+  },
+  {
+    name: "Hearing",
+    label: "Hearing",
+    control: "select",
+    options: [
+      {
+        label: "Excellent",
+        value: "Excellent"
+      },
+      {
+        label: "Good",
+        value: "Good"
+      },
+      {
+        label: "Average",
+        value: "Average"
+      },
+      {
+        label: "Poor",
+        value: "Poor"
+      },
+      {
+        label: "Failing",
+        value: "Failing"
+      },
+      
+    ],
+    disabled: false,
+    visible: true
+  },
+  {
+    name: "Teeth",
+    label: "Teeth",
+    control: "select",
+    options: [
+      {
+        label: "Excellent",
+        value: "Excellent"
+      },
+      {
+        label: "Good",
+        value: "Good"
+      },
+      {
+        label: "Average",
+        value: "Average"
+      },
+      {
+        label: "Poor",
+        value: "Poor"
+      },
+      {
+        label: "Failing",
+        value: "Failing"
+      },
+      
+    ],
+    disabled: false,
+    visible: true
+  },
+  {
+    name: "Sleep",
+    label: "Sleep",
+    control: "select",
+    options: [
+      {
+        label: "Excellent",
+        value: "Excellent"
+      },
+      {
+        label: "Good",
+        value: "Good"
+      },
+      {
+        label: "Average",
+        value: "Average"
+      },
+      {
+        label: "Poor",
+        value: "Poor"
+      },
+      {
+        label: "Failing",
+        value: "Failing"
+      },
+      
+    ],
+    disabled: false,
+    visible: true
+  },
+  {
+    name: "Dietary",
+    label: "Dietary",
+    control: "select",
+    options: [
+      {
+        label: "Excellent",
+        value: "Excellent"
+      },
+      {
+        label: "Good",
+        value: "Good"
+      },
+      {
+        label: "Average",
+        value: "Average"
+      },
+      {
+        label: "Poor",
+        value: "Poor"
+      },
+      {
+        label: "Failing",
+        value: "Failing"
+      },
+      
+    ],
+    disabled: false,
+    visible: true
+  },
+  {
+    name: "Hygiene",
+    label: "Hygiene",
+    control: "select",
+    options: [
+      {
+        label: "Excellent",
+        value: "Excellent"
+      },
+      {
+        label: "Good",
+        value: "Good"
+      },
+      {
+        label: "Average",
+        value: "Average"
+      },
+      {
+        label: "Poor",
+        value: "Poor"
+      },
+      {
+        label: "Failing",
+        value: "Failing"
+      },
+      
+    ],
+    disabled: false,
+    visible: true
+  },
+  {
+    name: "Smoker",
+    label: "Smoker",
+    control: "boolean"
+  },
+  {
+    name: "Injuries",
+    label: "Injuries",
+    control: "boolean"
+  },
+  {
+    name: "Allergies",
+    label: "Injuries",
+    control: "boolean"
+  },
+  {
+    name: "AIDSHIV",
+    label: "AIDSHIV",
+    control: "boolean",
+    required: false,
+    readonly: false,
+    disabled: false,
+    visible: true,
+    roleprivileges: [
+      {
+        role: "Leader Manager",
+        privilege: "Manage",
+        access: "crud",
+        disabled: false,
+        visible: true
+      },
+      {
+        role: "Staff",
+        privilege: "None",
+        access: null,
+        disabled: false,
+        visible: true
+      },
+      {
+        role: "Player",
+        privilege: "None",
+        access: null,
+        disabled: false,
+        visible: false
+      }
+    ]
+  },
+  {
+    name: "HepOther",
+    label: "HepOther",
+    control: "boolean",
+    required: false,
+    readonly: false,
+    disabled: false,
+    visible: true,
+    roleprivileges: [
+      {
+        role: "Leader Manager",
+        privilege: "Manage",
+        access: "crud",
+        disabled: false,
+        visible: true
+      },
+      {
+        role: "Staff",
+        privilege: "None",
+        access: null,
+        disabled: false,
+        visible: true
+      },
+      {
+        role: "Player",
+        privilege: "None",
+        access: null,
+        disabled: false,
+        visible: false
+      }
+    ]
+  },
+  {
+    name: "TB",
+    label: "TB",
+    control: "boolean"
+  },
+  {
+    name: "STD",
+    label: "STD",
+    control: "boolean",
+    required: false,
+    readonly: false,
+    disabled: false,
+    visible: true,
+    roleprivileges: [
+      {
+        role: "Leader Manager",
+        privilege: "Manage",
+        access: "crud",
+        disabled: false,
+        visible: true
+      },
+      {
+        role: "Staff",
+        privilege: "None",
+        access: null,
+        disabled: false,
+        visible: true
+      },
+      {
+        role: "Player",
+        privilege: "None",
+        access: null,
+        disabled: false,
+        visible: false
+      }
+    ]
+  },
+  {
+    name: "ChronicProblems",
+    label: "Chronic Problems",
+    control: "boolean"
+  },
+  {
+    name: "PhysicalDisability",
+    label: "Physical Disability",
+    control: "boolean"
+  },
+  {
+    name: "Prescription",
+    label: "Prescription",
+    control: "boolean"
+  },
+  {
+    name: "Pregnant",
+    label: "Pregnant",
+    control: "checkbox"
+  },
+  {
+    name: "DueDate",
+    label: "Due Date",
+    control: "datepicker",
+    placeholder: "mm/dd/yyyy",
+    options: {
+      format: "mm-dd-yyyy"
+    },
+    required: false,
+    readonly: false,
+    disabled: false,
+    visible: true
+  },
+  
+]
+    }).render();
+
+    medicalInfo.on("change", function () {
+        $("#nested-object").text(JSON.stringify(medicalInfo.toJSON(), null, 2));
+    }).trigger("change");
+    
+    
+
+    
+    
+    // note
+    var medCaseNotes = window.medCaseNotes = new Backbone.Model({ 
+            
+            noteTaker: "No",
+            noteTaken: "2016-01-15",
+            noteText: "Good so far",
+            
+      });
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    // Example with client identity
+    var personAndFamily = new Backbone.Model({
+        "firstName": "Andre",
+        "lastName": "Jones",
+        "relatives": {
+            "mother": {
+                "firstName": "Elizabeth",
+                "lastName": "Jones"
+            },
+            "father": {
+                "firstName": "Douglas",
+                "lastName": "Jones"
+            }
+        }
+    });
+
+    new Backform.Form({
+        el: "#form-client_identifcation",
+        model: clientIdentiy,
+        fields: [
+          { name: "firstName", label: "First Name", control: "input" },
+          { name: "lastName", label: "Last Name", control: "input" },
+          {
+              name: "relatives.mother.firstName",
+              label: "Mother's First Name",
+              control: "input",
+          }, {
+              name: "relatives.mother.lastName",
+              label: "Mother's Last Name",
+              control: "input",
+          }, {
+              name: "relatives.father.firstName",
+              label: "Father's First Name",
+              control: "input",
+          }, {
+              name: "relatives.father.lastName",
+              label: "Father's Last Name",
+              control: "input",
+          }
+        ]
+    }).render();
+
+    personAndFamily.on("change", function () {
+        $("#nested-object").text(JSON.stringify(personAndFamily.toJSON(), null, 2));
+    }).trigger("change");
+   
+   
+   
    
     // Example with deeply nested objects
     var personAndFamily = new Backbone.Model({

@@ -1,0 +1,70 @@
+ 
+ $.getJSON( "contentTree.json", { } )
+  .done(function( json ) {
+    console.log( "JSON Data: " + JSON.stringify(json) );
+    contentTree = json;
+  })
+  .fail(function( jqxhr, textStatus, error ) {
+    var err = textStatus + ", " + error;
+    console.log( "Request Failed: " + err );
+});
+ 
+ 
+ function loadFile() {
+    var input, file, fr;
+
+    if (typeof window.FileReader !== 'function') {
+      alert("The file API isn't supported on this browser yet.");
+      return;
+    }
+
+    input = document.getElementById('fileinput');
+    if (!input) {
+      alert("Um, couldn't find the fileinput element.");
+    }
+    else if (!input.files) {
+      alert("This browser doesn't seem to support the `files` property of file inputs.");
+    }
+    else if (!input.files[0]) {
+      alert("Please select a file before clicking 'Load'");
+    }
+    else {
+      file = input.files[0];
+      fr = new FileReader();
+      fr.onload = receivedText;
+      fr.readAsText(file);
+    }
+
+    function receivedText(e) {
+      lines = e.target.result;
+      var newArr = JSON.parse(lines); 
+    }
+  }
+  
+  
+  var myfile = load_json("./contentTree.json")
+
+
+function load_json(src) {
+  var head = document.getElementsByTagName('head')[0];
+
+  //use class, as we can't reference by id
+  var element = head.getElementsByClassName("json")[0];
+
+  try {
+    element.parentNode.removeChild(element);
+  } catch (e) {
+    //
+  }
+
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = src;
+  script.className = "json";
+  script.async = false;
+  head.appendChild(script);
+
+  //call the postload function after a slight delay to allow the json to load
+  //window.setTimeout(postloadfunction, 100)
+  window.setTimeout(function(){ console.log(head);; }, 300)
+}
